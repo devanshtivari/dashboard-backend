@@ -14,6 +14,6 @@ app.get("/hello" , (req,res) => {
 
 app.use("/",routes);
 
-app.listen(5000, console.log("server started successfully. Refer to http://localhost:5000"));
+app.listen(process.env.PORT || 5000, console.log("server started successfully. Refer to http://localhost:5000"));
 
 module.exports = app;
