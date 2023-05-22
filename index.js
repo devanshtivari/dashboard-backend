@@ -15,3 +15,5 @@ app.get("/hello" , (req,res) => {
 app.use("/",routes);
 
 app.listen(5000, console.log("server started successfully. Refer to http://localhost:5000"));
+
+module.exports = app;
